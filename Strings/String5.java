@@ -19,6 +19,7 @@ public class String5 {
         // TODO code application logic here
         System.out.println("Di una frase");
         String f1=new Scanner(System.in).nextLine();
+        f1=f1.toLowerCase();
         String f2 =f1.replace(" ", "");
         StringBuilder f3=new StringBuilder(f2);
         String f4= f3.reverse().toString();
@@ -31,7 +32,7 @@ public class String5 {
         else {
             System.out.println("No es palindromo");
         }
-        
+
     }
-    
+
 }
