@@ -20,6 +20,10 @@ public class String2 {
         System.out.println("Pon comentarios hasta 50 caracteres");
         String texto=new Scanner(System.in).nextLine();
         texto = texto.replaceAll(" ", "");
-        System.out.println (texto);
+        int t50=texto.length();
+        if (t50>50){
+            System.out.println ("Su texto tiene mas de 50 caracteres");
+        }
+        else System.out.println (texto);
     }
 }
